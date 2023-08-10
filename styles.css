@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(16, 16, 16);
+}
+
+/* navbar */
+nav{
+    margin: 24px;
+    display: flex;
+}
+
+.nav-bar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  padding: 12px 20px;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    padding-left: 30px;
+}
+
+.menu li a:hover{
+    font-size: 18px;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+}
+
+ .menu li a::after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: cornsilk;
+    transition: 0.15s ease-in-out;
+}
+
+/* .menu li a:hover:after{
+    
+    width: 100%;
+} */
+.open-menu, .close-menu{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu{
+   top: 50%;
+   right: 20px;
+   transform: translateY(-50%);
+}
+
+.close-menu{
+    top: 20px;
+    left: 20px;
+}
+
+#check{display: none;}
+
+.logo-text{
+    position: absolute;
+    top: 60px;
+    left: 15px;
+    color: white;
+}
+
+.connect-wallet{
+    width: 150px;
+    height: 20px;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: rgba(16, 16, 16, 0.856);
+    border: none;
+}
+.text-blue{
+  color: #0d6efd;
+}
+.text-white{
+  color: white;
+}
+
+/* heropage */
+.heropage-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.heropage-container{
+    margin-top: 200px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    margin-right: 24px;
+    height: 100%;
+}
+
+/* heropage-text */
+.heropage-text{
+    width: 50%;
+}
+.heropage-text h1{
+    color: white;
+    margin-bottom: 40px;
+}
+.heropage-text p{
+    color: white;
+  margin-bottom: 40px;
+}
+.input-box{
+    width: 315px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+.copy-icon{
+    color: grey;
+    margin-left: 5px;
+   }
+.hero-address{
+    font-weight: bold;
+}   
+.heropage-text input{
+    margin-bottom: 40px;
+}
+.btn-hero{
+    background-color: #1f78fe;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+} 
+
+button a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+}
+
+/* hero-image */
+.hero-image{
+     margin-top: -5em;
+    margin-left: 150px;
+}
+
+/* media queries */
+@media (max-width: 600px){
+.navbar-container {
+    height: 100%;
+    width: 650px;
+}
+
+.logo-text{
+    font-size: 24px;
+}
+
+.menu{
+    flex-direction: column;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    bottom: 0;
+    left: -100%;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+}
+
+.connect-wallet{
+  width: 160px;
+  height: 60px;
+  text-align: center;
+  margin-top: -20px;
+  border-radius: 80px;
+}
+
+.menu li{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.menu li a{
+    padding: 10px;
+}
+
+.open-menu, .close-menu{
+    display: block;
+}
+
+#check:checked ~ .menu {
+    left: 0;
+}
+
+.heropage-container{
+    height: 100%;
+    width: 100%;
+    font-size: 1em;
+}
+
+.heropage-details{
+    width: 600px;
+    display: inline-block;
+}
+
+.heropage-text {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 100%;
+    font-size: 24px;
+}
+
+.input-box{
+    font-size: 20px;
+}
+
+.btn-hero{
+    position: absolute;
+    bottom: -200px;
+    width: 280px;
+}
+.hero-image{
+        margin-top: 50px;
+        margin-left: 0px;
+        width: 360px;
+}
+    }
+
+@media (max-width:900px){
+    .hero-image{
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+}    

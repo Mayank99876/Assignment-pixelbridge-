@@ -1,0 +1,137 @@
+.buy-now-container{
+    padding: 50px;
+    color: white;
+    width: 600px;
+}
+
+.dex-exchange img{
+    width: 90px;
+    height: 90px;
+    margin: 10px 80px;
+}
+
+h3{
+    margin-left: 600px;
+    color: white;
+    margin-top: 30px;
+}
+
+.dex-exchange{
+    border: 1px solid hsla(0,0%,100%,.1);
+    border-radius: 16px;
+    height: 200px;
+    width: 300px;
+    margin-left: 24px;
+    padding: 20px;
+}
+.dex-exchange a{
+    background: #269AFE;
+    color: white;
+    text-decoration: none;
+    margin: 15px 54px;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.dex-1{
+    display: flex;
+    margin-left: 50px;
+    padding: 40px;
+    margin-left: 330px;
+}
+
+.dex-2{
+    margin-left: 530px;
+    margin-top: 20px;
+}
+
+/* media queries*/
+
+@media (max-width:600px){
+    .navbar-container {
+        height: 100%;
+        width: 650px;
+    }
+    
+    .logo-text{
+        font-size: 24px;
+    }
+    
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        /* align-items: center; */
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        background-color: rgb(36, 36, 36);
+        position: fixed;
+        bottom: 0;
+        left: -100%;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .connect-wallet{
+      width: 160px;
+      height: 60px;
+      text-align: center;
+      margin-top: -20px;
+      border-radius: 80px;
+    }
+    
+    .menu li{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .menu li a{
+        padding: 10px;
+    }
+    
+    .open-menu, .close-menu{
+        display: block;
+    }
+    
+    #check:checked ~ .menu {
+        left: 0;
+    }
+
+    .buy-now-container{
+      width: 650px;
+      height: 100%;
+      padding: 50px;
+    }
+
+    h3{
+        margin-left: 0px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .dex-1{
+        margin-left: 0;
+        display: block;
+        padding: 0;
+    }
+
+    .dex-2{
+        margin-left: 0;
+    }
+
+    .dex-exchange{
+        margin: 44px 0px 20px 100px;
+        height: 300px;
+        width: 400px;
+    }
+
+    .dex-exchange img{
+        width: 150px;
+        height: 150px;
+    }
+    .dex-exchange a{
+        font-size: 24px;
+        padding: 10px;
+    }
+}

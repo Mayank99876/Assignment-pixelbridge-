@@ -1,0 +1,200 @@
+.about-hero-heading{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin: 40px 0px;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card img{
+   height: 150px;
+   width: 150px;
+   align-items: center;
+   justify-content: center;
+}
+.card-1,.card-2,.card-3,.card-4{
+        border: 1px solid hsla(0,0%,100%,.1);
+        border-radius: 16px;
+        height: 391px;
+        width: 290px;
+        padding: 20px;
+        font-size: 16px;
+}
+
+.card-1:hover,.card-3:hover{
+    position: relative;
+    bottom:-20px;
+}
+
+.card-2:hover,.card-4:hover{
+    position: relative;
+  top: -20px;
+}
+
+
+
+.roadmap-text{
+    color: white;
+    font-size: 30px;
+    margin: 40px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.roadmap-note{
+    color: white;
+    font-size: 16px;
+    margin: 16px 0px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.roadmap-paletes{
+    padding: 40px;
+    width: 100%;
+    height: 541.6px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.roadmap-paletee{
+    width: 391px;
+    width: 341px;
+    padding: 20px;
+    margin: 0px 0px 40px;
+    border: 1px solid hsla(0,0%,100%,.1);
+    border-radius: 16px;
+    color: white;
+    
+}
+
+.phase-2,.phase-4{
+    margin-top: 100px;
+    color: white;
+}
+
+.roadmap-paletee p{
+    font-size: 16px;
+    margin: 16px 0px;
+}
+
+.phase-1-line1,.phase-1-line4{
+    width: 44px;
+    height: 21px;
+    color: #389E0D;
+    background-color: #F6FFED;
+    font-size: 12px;
+}
+
+.phase-1-line2,.phase-1-line3{
+    width: 44px;
+    height: 21px;
+    color: #D4B106;
+    background-color: #FEFFE6;
+    font-size: 12px;
+}
+
+/* media queries */
+
+@media (max-width:600px){
+    .navbar-container {
+        height: 100%;
+        width: 650px;
+    }
+    
+    .logo-text{
+        font-size: 24px;
+    }
+    
+    .menu{
+        flex-direction: column;
+        width: 100%;
+        /* align-items: center; */
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        background-color: rgb(36, 36, 36);
+        position: fixed;
+        bottom: 0;
+        left: -100%;
+        z-index: 100;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .connect-wallet{
+      width: 160px;
+      height: 60px;
+      text-align: center;
+      margin-top: -20px;
+      border-radius: 80px;
+    }
+    
+    .menu li{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    
+    .menu li a{
+        padding: 10px;
+    }
+    
+    .open-menu, .close-menu{
+        display: block;
+    }
+    
+    #check:checked ~ .menu {
+        left: 0;
+    }
+    
+    .about-hero-container{
+        padding: 50px;
+        width: 650px;
+        height: 2000px;
+    }
+
+    .h5{
+        font-size: 30px;
+    }
+    .card-1,.card-2,.card-3,.card-4{
+        font-size: 24px;
+        width: 400px;
+        height: 500px;
+    }
+
+    .roadmap-container{
+        height: 2400px;
+        width: 650px;
+        padding: 50px;
+        margin-top: 250px;
+    }
+    
+    .roadmap-text{
+        font-size: 45px;
+    }
+
+    .roadmap-paletee{
+        width: 500px;
+        height: 450px;
+    }
+
+    .phase-1,.phase-2,.phase-3,.phase-4{
+        padding: 20px;
+    }
+
+    .roadmap-paletee p{
+        font-size: 24px;
+    }
+    .phase-3{
+        margin-top: 430px;
+    }
+}
